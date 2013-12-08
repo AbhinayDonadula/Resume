@@ -649,8 +649,12 @@ th {
     margin: 80px 20px;
 }
 
-.special-checkbox {
+.special-checkbox, .printme , .adobe, .ms, .availabletag, .floatingHeader {
     display: none;
+}
+
+.arrow {
+    visibility: hidden;
 }
 
 }
@@ -658,8 +662,13 @@ th {
 /* iPads (portrait and landscape) -----------*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     /* Styles */
-.special-checkbox {
+.special-checkbox, .printme , .adobe, .ms, .availabletag, .floatingHeader {
     display: none;
 }
+
+.arrow {
+    visibility: hidden;
+}
+
 
 }
