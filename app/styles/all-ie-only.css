@@ -1,0 +1,46 @@
+.nonIE {
+	display: none;
+}
+
+.ie {
+	display: block;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #666;
+}
+
+.box {
+  background: #fff;
+  width: 500px;
+  height: 200px;
+  margin: 10% auto;
+  padding: 5px 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px 0 #303030;
+}
+
+.printme {
+	margin: 0 290px;
+    width: 32px;
+    height: 32px;
+    background: url("/images/print.png");
+    position: absolute;
+}
+ 
+.adobe {
+	margin: 0 230px;
+    width: 32px;
+    height: 32px;
+    background: url("/images/pdf.png");
+    position: absolute;
+}
+
+.ms {
+	margin: 0 170px;
+    width: 32px;
+    height: 32px;
+    background: url("/images/word.png");
+    position: absolute;
+}

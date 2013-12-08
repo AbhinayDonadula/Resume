@@ -1,8 +1,4 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+ <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +7,15 @@
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
+
+        <!--[if IE]>
+			<link rel="stylesheet" type="text/css" href="styles/all-ie-only.css" />
+		<![endif]-->
+		
+		<!--[if !IE]><!-->
+			<link rel="stylesheet" href="styles/main.css">
+ 		<!--<![endif]-->
+        
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css">
 		<link href='http://fonts.googleapis.com/css?family=Montserrat+Subrayada:700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
@@ -23,15 +27,24 @@
         <!-- endbuild -->
     </head>
     <body>
-        <!--[if lt IE 10]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        
+	
+	<div class="ie">
+		<div class="box">
+    		<h2 style="text-align:center;">Your browser is too old!!!</h2>
+    		<p style="text-align:center;">Please <a href="http://browsehappy.com/">upgrade</a> your browser at <em>browsehappy.com</em></p>
+    		<p style="text-align:center;">You can download/print my resume</p>
+    		<a href="#" class="printme" onclick="window.print()"></a>
+			<a href="Abhinay_Donadula.pdf" class="adobe" ></a>
+			<a href="Abhinay_Donadula.rtf" class="ms"></a>
+  		</div>
+	</div>
 
-
+	<div class="nonIE">
         <div class="indent" >
 			<a href="#" class="printme" onclick="window.print()"></a>
 			<a href="Abhinay_Donadula.pdf" class="adobe" target="_blank"></a>
-			<a href="#" class="ms"></a>
+			<a href="Abhinay_Donadula.rtf" class="ms"></a>
 
 			<section class='multicolor'></section>
 			
@@ -109,7 +122,7 @@
 			
 					<div class="item">
 						<h2 class="item-name">
-							<span class="skill-name">jQuery</span>
+							<span class="skill-name">jQuery, jQueryUI</span>
 							<div class="ribbon"> <span>Expert</span> </div>
 						</h2>
 						<p class="item-desc">Experience with jQuery in an application context in addition to DOM manipulation. Built highlighy scalable cutting edge web based applications using jQuery. Expert at creating flawless hand-coded production-quality, standards-based cross browser jQuery</p>
@@ -118,7 +131,7 @@
 			
 					<div class="item">
 						<h2 class="item-name">
-							<span class="skill-name">AngularJS, HAML</span>
+							<span class="skill-name">AngularJS, HAML, d3.js</span>
 							<div class="ribbon"> <span class="beginner">Beginner</span> </div>
 						</h2>
 						<p class="item-desc"> Design and implement single page angular web application as a kanban tool to visualize project management and empower our team productivity with this single page web app. </p>
@@ -138,16 +151,16 @@
 							<span class="skill-name">Responsive web design, <br>Cross Browser</span>
 							<div class="ribbon"> <span class="beginner">Beginner</span> </div>
 						</h2>
-						<p class="item-desc">Browser support provided for browsers like IE6, IE7, IE8, IE9+, FireFox, Chrome, Ssafari, Opera. Used CSS3Pie with Modernizr as a IE6-9 HTML 5 polyfill to support old IE's. Cross browser testing using IETester, Adobe browser labs, BrowserStack, BrowserShots, VMWare, VirtualBox virtual machines. Implemented Responsive web design with Twitter bootstrap and Zurb Foundation framework.</p>
+						<p class="item-desc">Browser support provided for browsers like IE6, IE7, IE8, IE9+, FireFox, Chrome, Safari, Opera. Used CSS3Pie with Modernizr as a IE6-9 HTML 5 polyfill to support old IE's. Cross browser testing using IETester, Adobe browser labs, BrowserStack, BrowserShots, VMWare, VirtualBox virtual machines. Implemented Responsive web design with Twitter bootstrap and Zurb Foundation framework.</p>
 						<span class="item-border"></span>
 					</div>
 
 					<div class="item">
 						<h2 class="item-name">
-							<span class="skill-name">Java</span>
+							<span class="skill-name">Additional Skills</span>
 							<div class="ribbon"> <span class="advanced">Advanced</span></div>
 						</h2>
-						<p class="item-desc">Selenium RC, Selenium Web driver, Junit, Mockito, EasyMock, PowerMock, Hibernate, Spring.</p>
+						<p class="item-desc">Java, JSP, Modernizer, Grunt, Yeoman, Normalize.css, Selenium RC, Selenium Web driver, Teamsite, Junit, Mockito, EasyMock, PowerMock, Hibernate, Spring, Splunk, web trends, Adobe Analytics, Sublime Text, Brackets, Aptana, Eclipse, STS, Git, SVN, PCVS.</p>
 					</div>
 				
 					<div class="clear"></div>
@@ -171,6 +184,7 @@
 						</h2>
 						<ul class="item-desc">
 						   <li> Applied advanced HTML, JavaScript, and CSS to deliver cutting-edge user interfaces and components. </li>
+						   <li>Create interactive websites and website features using 		JavaScript and jQuery / jQuery UI.</li>
 							<li>Developed and maintained a kanban tool which is a project management tool, also used by multiple teams in the company.</li>
 						   <li>Contributed user interface design mockups and designs.
 						   	 Trained and mentored teammates.</li>
@@ -195,6 +209,7 @@
 							<li>Front End Development including HTML5, CSS3, and jQuery utilizing the Bootstrap framework</li>
 							<li>Refine and iterate user experience by designing and implementing new modules and interfaces</li>
 							<li>UI/UX development to create a seamless customer experience for a high traffic e-commerce website</li>
+							<li>Cross browser testing in Internet Explorer 6+, Safari, Chrome, Firefox on Mac OS Windows & Selenium</li>
 						</ul>
 						<span class="item-border"></span>
 					</div>
@@ -221,7 +236,7 @@
 							<span class="skill-name">Front End Developer</span>
 							<h3 class="company-name">Aditya Sol, Hyd-India</h3>
 							<div class="time ribbon">
-								<span class="timeline">Apr'09 - Dec'09</span>
+								<span class="timeline">Nov'08 - Dec'09</span>
 							</div>
 						</h2>
 						<ul class="item-desc">
@@ -259,7 +274,8 @@
 			<!-- Arrow -->
 			<a class="arrow animated bounce" href="#top"></a>
 			<!-- End Arrow -->
-	</div>	
+	</div>
+</div>		
 	<!-- End Indent Section-->
 
 

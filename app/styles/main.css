@@ -13,6 +13,10 @@ body {
     overflow-x: hidden;
 }
 
+.ie {
+    display: none;
+}
+
 /* layout */
 .indent {
     background: white;
@@ -192,7 +196,7 @@ body {
 /*Experience section */
 .experience .cv-section-name {
     float: left;
-    height: 1250px;
+    height: 1350px;
     font-family: 'Alegreya SC', serif;
     font-size: 25px;
     width: 40%;
@@ -250,7 +254,7 @@ body {
     
     position: absolute;
     top:-9px;
-    right: -11px;
+    right: 10px;
     width: 150px;
     height: 20px;
     color:#b7f412;
@@ -278,7 +282,7 @@ body {
     -ms-transform: rotateY(0deg);
     transform: rotateY(0deg);
     cursor: pointer;
-    right: 60px;
+    right: 87px;
     top: 50px;
     margin: -20px -40px;
     border-radius: 13px;
